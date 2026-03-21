@@ -1,0 +1,11 @@
+[user]
+	name = Chino Franco
+	email = chino.franco@gmail.com
+[core]
+	editor = vim
+	pager = less -F -X -R
+[push]
+	autoSetupRemote = true
+[alias]
+	last = !git --no-pager log -1 HEAD
+	lasts = "!f() { git log -n \"${1:-5}\" --pretty=format:%H; }; f"
